@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="index_page">
+
+<head>
+	<title>Garrett R. Miller | Portfolio</title>
+	<!--META-->
+	<meta name="description" content="A angular test on directives" />
+	<meta http-equiv="author" content="Garrett Miller" />
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--CSS & FONTS-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+
+
+<body ng-app="myMod">
+
+  <nav>
+		<ul>
+			<li id="about_nav"><a href="about.html">ABOUT</a></li>
+			<li id="port_nav"><a href="#/portfolio">PORTFOLIO</a></li>
+		</ul>
+  </nav>
+
+  <h1>Portfolio</h1>
+
+<section ng-controller="portCtrl">
+  <div grm-portfolio ng-repeat="project in projects">
+
+  </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
